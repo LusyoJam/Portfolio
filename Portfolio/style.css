@@ -196,10 +196,16 @@ footer {}
     font-size: var(--font-sm);
 }
 
+
 .skill-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     margin: 1.5rem;
+}
+
+.sect-label-container {
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .skill-card {
@@ -209,5 +215,6 @@ footer {}
 }
 
 .skill-card img {
-    
+    width: 50%;
+    align-self: center;
 }
