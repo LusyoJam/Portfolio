@@ -118,6 +118,7 @@
 
 .a {
     color: var(--a-color);
+    margin-top: var(--space-xl);
 }
 
 .bordered {
@@ -147,8 +148,8 @@ body {
 /* HEADER PART */
 
 header {
-    --position: sticky;
-    --top: 0;
+    position: sticky;
+    top: 0;
     font-size: var(--font-sm);
     padding: var(--space-m);
     font-family: "ibm sans";
@@ -250,11 +251,19 @@ footer {
     color: var(--accent-color2);
 }
 
+.about-container {
+    padding: var(--space-m);
+    gap: var(--space-m);
+}
+
+.about-container img {
+    border-radius: var(--border-radius-s);
+}
 
 .skill-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 1.5rem;
+    margin: var(--space-xl);
 }
 
 .sect-label-container {
