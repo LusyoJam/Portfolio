@@ -6,57 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body class="flex col">
-    <div>
-        <header class="flex center">
-            <div class="logo">
-                <a href="#">JL</a>
-            </div>
-            <nav class="navigation-bar flex">
-                <a href="./about.html" class="nav-links">About Me</a>
-                <a href="./projects.html" class="nav-links">Projects</a>
-                <a href="./skills.html" class="nav-links">Skills</a>
-            </nav>
-        </header>
-        <main class="flex col">
-            <section class="flex col first-sect">
-                <h1 class="intro-txt ">Aiming for Greatness.</h1>
-                <p class="base-txt">Hello, I'm an aspiring Software Engineer focused on building robust and meaningful systems.</p>
-                <a href="#"><span class="base-txt a">Get to know me more &RightArrow;</span></a>
-            </section>
-            <section class="project-sect flex col">
-                <h1 class="sect-head-txt">Projects </h1>
-                <span class="base-txt thin-txt">Some of the projects I did</span>
-                <div class="project-container flex center col">
-                    <div class="project bordered">
-                        <img src="./assets/images/lucky9.jpeg">
-                        <span class="proj-description thin-txt sm-descrip-txt">A terminal-based game of Lucky-9</span>
-                    </div>
-                    <div class="project bordered">
-                        <img src="./assets/images/etchysketchy.png">
-                        <span class="proj-description thin-txt sm-descrip-txt">A fun pixel sketchpad</span>
-                    </div>
+    <header class="flex center">
+        <div class="logo">
+            <a href="#">JL</a>
+        </div>
+        <nav class="navigation-bar flex">
+            <a href="./about.html" class="nav-links">About</a>
+            <a href="./projects.html" class="nav-links">Projects</a>
+            <a href="./contacts.html" class="nav-links">Contacts</a>
+        </nav>
+    </header>
+    <main class="flex col">
+        <section class="flex col first-sect animate">
+            <h1 class="intro-txt">Aiming for Greatness.</h1>
+            <p class="base-txt">Systems Engineer committed on building robust and meaningful systems.</p>
+            <a href="#"><span class="base-txt">Get to know me more &RightArrow;</span></a>
+        </section>
+        <section class="project-sect flex col animate">
+            <h1 class="sect-head-txt">Projects </h1>
+            <span class="base-txt thin-txt">A peek to some projects I did</span>
+            <div class="project-container flex center col">
+                <div class="project bordered">
+                    <img src="./assets/images/lucky9.jpeg">
+                    <span class="proj-description thin-txt sm-txt">A terminal-based game of Lucky-9</span>
                 </div>
-                <span class="thin-txt base-txt">
-                    <a href="#" class="a">View other projects &RightArrow;</a>
-                </span>
-            </section>
-            <section class="flex col">
-                <h1 class="sect-head-txt">Skills </h1>
-                <a class="a base-txt">Techonologies I use in my projects &RightArrow;</a>
-            </section>
-        </main>
-        <footer class="flex center">
-            <div class="socials-div flex">
-                <img class="socials-img" src="./assets/icon/github.png">
-                <img class="socials-img" src="./assets/icon/gmail.png">
-                <img class="socials-img" src="./assets/icon/linkedin.png">
+                <div class="project bordered">
+                    <img src="./assets/images/etchysketchy.png">
+                    <span class="proj-description thin-txt sm-txt">A fun pixel sketchpad</span>
+                </div>
             </div>
-            <span class="copyright-txt txt-center base-txt">&copy; JL<span class="copy-date"> 2026</span></span>
-        </footer>
-    </div>
+            <span class="thin-txt base-txt">
+                <a href="#" class="a">View other projects &RightArrow;</a>
+            </span>
+        </section>
+        <section class="flex col fade-in">
+            <h1 class="sect-head-txt">Contacts </h1>
+            <span class="base-txt">Want to reach out and say hi?</span>
+            <a class="a base-txt">Contact me &RightArrow;</a>
+        </section>
+    </main>
+    <footer class="flex justify-center align-center col gap-l fade-in">
+        <!-- <div class="socials-div flex">
+            <img class="socials-img" src="./assets/icon/github.png">
+            <img class="socials-img" src="./assets/icon/gmail.png">
+            <img class="socials-img" src="./assets/icon/linkedin.png">
+        </div> -->
+        <div class="flex gap-xl">
+            <span class="sm-txt inter footer-links">Linkedin</span>
+            <span class="sm-txt inter footer-links">Github</span>
+            <span class="sm-txt inter footer-links">Instagram</span>
+
+        </div>
+        <div>
+            <span class="copyright-txt txt-center">&copy;<span class="copy-date">2024-2026</span> James Plete</span>
+        </div>
+    </footer>
+
 
 </body>
 
