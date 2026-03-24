@@ -5,69 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body class="flex col">
     <header class="flex center">
         <div class="logo">
             <a href="./index.html">JL</a>
         </div>
+        
+        <div class="burger">
+            <img src="./assets/icon/burger.webp" alt="">
+        </div>
 
-        <nav class="navigation-bar flex">
+        <nav class="navigation-bar col txt-right display-none">
             <a href="./about.html" class="nav-links">About</a>
             <a href="./projects.html" class="nav-links">Projects</a>
             <a href="./contacts.html" class="nav-links">Contacts</a>
         </nav>
     </header>
 
-    <main class="project-main flex col">
+    <main class="project-main flex col animate">
         <h1 class="sect-head-txt">Projects </h1>
-            <p class="base-txt thin-txt">
+            <p class="base-txt thin-txt animate">
                 Whenever I have some free time, I would work on some projects that to further hone my skills. Here's the compilation of all the projects I've done.
             </p>
-            <div class="project-container flex center col">
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/lucky9.jpeg" class="proj-img">
+            <div class="project-container flex center col gap-xl">
+                <div class="proj-2 bordered flex col gap-l fade-in lucky-9" id="lucky-9">
+                    <img src="./assets/images/lucky9.webp" class="proj-img" id="lucky-9">
                     <span class="proj-description thin-txt sm-txt">A terminal-based game of Lucky-9</span>
                     <p class="thin-txt sm-txt"> Tech: Java | Docker</p>
                 </div>
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/librosys.jpeg" class="proj-img">
-                    <span class="proj-description thin-txt sm-txt">A Library System made using Winforms</span>
-                    <p class="thin-txt sm-txt"> Tech: C# | MySQL | Docker</p>
-                </div>
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/lucky9.jpeg" class="proj-img">
-                    <span class="proj-description thin-txt sm-txt">A URL shortener REST API</span>
+                <div class="proj-2 bordered flex col gap-l fade-in urlshorty" id="urlshorty">
+                    <img src="./assets/images/urlshorty.webp" class="proj-img" id="urlshorty">
+                    <span class="proj-description thin-txt sm-txt">A url-shortener api</span>
                     <p class="thin-txt sm-txt"> Tech: Java | Spring Boot | PostgreSQL | Docker</p>
                 </div>
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/etchysketchy.webp" class="proj-img">
+                <div class="proj-2 bordered flex col gap-l fade-in librosys" id="librosys">
+                    <img src="./assets/images/librosys.webp" class="proj-img" id="librosys">
+                    <span class="proj-description thin-txt sm-txt">A student library management system</span>
+                    <p class="thin-txt sm-txt"> Tech: C# | MySQL | Docker</p>
+                </div>
+                
+                <div class="proj-2 bordered flex col gap-l fade-in caltor" id="caltor">
+                    <img src="./assets/images/caltor.webp" class="proj-img" id="caltor">
                     <span class="proj-description thin-txt sm-txt">A retro calculator</span>
                     <p class="thin-txt sm-txt"> Tech: HTML | CSS | JavaScript | Docker</p>
                 </div>
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/etchysketchy.webp" class="proj-img">
+                <div class="proj-2 bordered flex col gap-l fade-in etchysketchy" id="etchysketchy">
+                    <img src="./assets/images/etchysketchy.webp" class="proj-img" id="etchysketchy">
                     <span class="proj-description thin-txt sm-txt">A fun pixel sketchpad</span>
                     <p class="thin-txt sm-txt"> Tech: HTML | CSS | JavaScript | Docker</p>
                 </div>
                 
-                <div class="proj-2 bordered flex col gap-l">
-                    <img src="./assets/images/lucky9.jpeg" class="proj-img">
-                    <span class="proj-description thin-txt sm-txt">A lightweight cli task manager</span>
+                <div class="proj-2 bordered flex col gap-l fade-in tasktracker" id="tasktracker">
+                    <img src="./assets/images/tasktracker.webp" class="proj-img" id="tasktracker">
+                    <span class="proj-description thin-txt sm-txt">A lightweight terminal-based task manager</span>
                     <p class="thin-txt sm-txt"> Tech: Java | JSON | Docker</p>
                 </div>
             </div>
     </main>
 
    <footer class="flex justify-center align-center col gap-l">
-        <div class="flex gap-xl">
-            <span class="sm-txt inter footer-links">Linkedin</span>
-            <span class="sm-txt inter footer-links">Github</span>
-            <span class="sm-txt inter footer-links">Instagram</span>
-
-        </div>
-        <div>
-            <span class="copyright-txt txt-center">&copy;<span class="copy-date">2024-2026</span> James Plete</span>
+        <div class="flex col gap-l txt-center">
+            <p class="base-txt italic">Building everything with intent.</p>
+            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
         </div>
     </footer>
 

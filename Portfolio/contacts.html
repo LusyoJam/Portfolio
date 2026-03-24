@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
-
 <body class="flex col">
     <header class="flex center">
         <div class="logo">
             <a href="./index.html">JL</a>
         </div>
-        <nav class="navigation-bar flex">
+        
+        <div class="burger">
+            <img src="./assets/icon/burger.webp" alt="">
+        </div>
+
+        <nav class="navigation-bar col txt-right display-none">
             <a href="./about.html" class="nav-links">About</a>
             <a href="./projects.html" class="nav-links">Projects</a>
             <a href="./contacts.html" class="nav-links">Contacts</a>
         </nav>
     </header>
-    <main class="flex col">
-       
-    </main>
-    <footer class="flex justify-center align-center col gap-l">
-        <!-- <div class="socials-div flex">
-            <img class="socials-img" src="./assets/icon/github.png">
-            <img class="socials-img" src="./assets/icon/gmail.png">
-            <img class="socials-img" src="./assets/icon/linkedin.png">
-        </div> -->
-        <div class="flex gap-xl">
-            <span class="sm-txt inter footer-links">Linkedin</span>
-            <span class="sm-txt inter footer-links">Github</span>
-            <span class="sm-txt inter footer-links">Instagram</span>
 
+    <main class="contact-main flex col fade-in">
+       <div class="flex col gap-l">
+           <h1 class="sect-head-txt"> Get In Touch </h1>
+            <p class="base-txt thin-txt">
+                Whether it's an offer, a collaboration, or you just saying hi — I'm always open to a good coversation.
+            </p>
+       </div>
+
+        <div class="contact-socials-container flex col gap-xl">
+            <div class="flex gap-l base-txt contact-socials align-center email-contact" id="email">
+                <img src="./assets/icon/email.png" alt="">
+                <p class="thin-txt">EMAIL</p>
+                <p class="socials-text">
+                    jlouisse.plete@gmail.com
+                </p>
+            </div>
+
+            <div class="flex gap-l base-txt contact-socials align-center github-contact" id="github">
+                <img src="./assets/icon/github.png" alt="">
+                <p class="thin-txt">Github</p>
+                <p class="socials-text">
+                    Lusyoo
+                </p>
+            </div>
+
+            <div class="flex gap-l base-txt contact-socials align-center linkedin-contact" id="linkedin">
+                <img src="./assets/icon/linkedin.png" alt="">
+                <p class="thin-txt">Linkedin</p>
+                <p class="socials-text">
+                    in/james-louisse-plete
+                </p>
+            </div>
+
+            <div>
+                <a href='https://ko-fi.com/W7W81WKS0Z' target='_blank'><img class="buymeacoffee" src="./assets/icon/kofi2.webp" alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
         </div>
-        <div>
-            <span class="copyright-txt txt-center">&copy;<span class="copy-date">2024-2026</span> James Plete</span>
+    </main>
+
+   <footer class="flex justify-center align-center col gap-l">
+        <div class="flex col gap-l txt-center">
+            <p class="base-txt italic">Building everything with intent.</p>
+            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
         </div>
     </footer>
 
-
 </body>
-
 </html>

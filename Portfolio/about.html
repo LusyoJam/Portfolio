@@ -12,8 +12,12 @@
         <div class="logo">
             <a href="./index.html">JL</a>
         </div>
+        
+        <div class="burger">
+            <img src="./assets/icon/burger.webp" alt="">
+        </div>
 
-        <nav class="navigation-bar flex">
+        <nav class="navigation-bar col txt-right display-none">
             <a href="./about.html" class="nav-links">About</a>
             <a href="./projects.html" class="nav-links">Projects</a>
             <a href="./contacts.html" class="nav-links">Contacts</a>
@@ -21,43 +25,35 @@
     </header>
 
     <main class="about-main">
-        <h1 class="sect-head-txt animate">
-                    About
-            </h1>
-        <section>
-            <video> <source src="" autoplay> </video>
-        </section>
-
-        
+        <h1 class="sect-head-txt animate"> About</h1>        
         <section class="flex col justify-between animate about-sect">
-            <div class="about-container flex align-center justify-center col">
-                <div class="first-abt flex align-center justify-center"><img src="./assets/images/me.jpeg" alt=""></div>
-                <p class="base-txt">Kumusta! 👋  <br> <br> I am James Plete, an aspriring ML Engineer. I'm currently a sophomore pursuing Bachelor of Science in Information Technology in Pamantasan ng Lungsod ng Valenzuela.</p>
-                
+            <div class="flex align-center justify-center col first-abt">
+                <div class="flex align-center justify-center me-container"><img src="./assets/images/me.webp" alt=""></div>
+                <p class="base-txt">Kumusta! 👋  <br> <br> I am James Plete, an aspriring ML Engineer. I'm currently a sophomore pursuing Bachelor of Science in Information Technology in Pamantasan ng Lungsod ng Valenzuela.</p>         
             </div>
 
-            <div class="about-container flex align-center justify-center left-d">
+            <div class="about-container flex align-center justify-center reverse">
                 <p class="base-txt">During free time, I enjoy learning new things and building something out of those. I also like solving problems and approaching them systematically.</p>
-                <div class="about-self flex align-center justify-center"><img class="programming-img" src="./assets/images/programming.jpeg" alt=""></div>
-                
+                <div class="about-self flex align-center justify-center"><img class="programming-img" src="./assets/images/programming.webp" alt=""></div>
                 
             </div>
 
-            <div class="about-container flex align-center justify-center right-d">
+            <div class="about-container flex align-center justify-center">
                 <p class="base-txt">Outside of work and school, I often found solace in nature trips and adventures with my friends.</p>
-                <div class="about-self flex align-center justify-center nature-img"><img src="./assets/images/2.jpeg" alt=""></div>
+                <div class="about-self flex align-center justify-center nature-img"><img src="./assets/images/2.webp" alt=""></div>
                 
             </div>
 
-            <div class="about-container flex align-center left-d">
+            <div class="about-container flex align-center reverse">
                 <p class="base-txt">Like any other students navigating through their life though, I also encounter problems and hardships.</p>
-                <div class="about-self flex align-center justify-center"><img src="./assets/images/3.jpeg" alt=""></div>
+                <div class="about-self flex align-center justify-center"><img src="./assets/images/3.webp" alt=""></div>
+                
             </div>
 
-            <div class="about-container flex align-center right-d">
-                 <p class="base-txt">Nevertheless, I always use those hardships as my fuel to keep moving and achieve my dreams one step at a time.</p>
-                <div class="about-self flex align-center justify-center"><img class="java-comp" src="./assets/images/java_comp.jpg" alt=""></div>
-               
+            <div class="about-container flex align-center">
+                <p class="base-txt">Nevertheless, I view those as challenges thas fuels me to keep moving and achieve my dreams one step at a time.</p>
+                <div class="about-self flex align-center justify-center"><img class="java-comp" src="./assets/images/java_comp.webp" alt=""></div>
+                
             </div>
         </section>
 
@@ -87,19 +83,9 @@
     </main>
 
     <footer class="flex justify-center align-center col gap-l">
-        <!-- <div class="socials-div flex">
-            <img class="socials-img" src="./assets/icon/github.webp">
-            <img class="socials-img" src="./assets/icon/gmail.webp">
-            <img class="socials-img" src="./assets/icon/linkedin.webp">
-        </div> -->
-        <div class="flex gap-xl">
-            <span class="sm-txt inter footer-links">Linkedin</span>
-            <span class="sm-txt inter footer-links">Github</span>
-            <span class="sm-txt inter footer-links">Instagram</span>
-
-        </div>
-        <div>
-            <span class="copyright-txt txt-center">&copy;<span class="copy-date">2024-2026</span> James Plete</span>
+        <div class="flex col gap-l txt-center">
+            <p class="base-txt italic">Building everything with intent.</p>
+            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
         </div>
     </footer>
 
