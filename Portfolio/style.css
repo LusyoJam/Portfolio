@@ -215,7 +215,7 @@ header {
     font-weight: var(--font-wt-base);
     color: var(--header-txt-color);
     height: 150px;
-    width: 100px;
+    width: 100%;
     padding: var(--space-m);
     background-color: inherit;
     text-align: center;
