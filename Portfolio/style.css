@@ -190,6 +190,15 @@ main {
     cursor: pointer;
 }
 
+.burger div {
+    width: 80%;
+    height: 4px;
+    background-color: var(--accent-color2);
+    margin: 6px 0;
+    border-radius: var(--border-radius-xs);
+    transition: all 0.3s ease;
+}
+
 .burger img {
     width: 100%;
 }
@@ -208,13 +217,13 @@ header {
 
 .navigation-bar {
     right: 0%;
-    bottom: -185%;
-    justify-content: space-around;
+    bottom: -260%;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     font-weight: var(--font-wt-base);
     color: var(--header-txt-color);
-    height: 150px;
+    height: 200px;
     width: 100%;
     padding: var(--space-m);
     background-color: inherit;
@@ -237,6 +246,15 @@ header {
 }
 
 /* MAIN PART */
+
+/* .first-sect {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} */
 
 
 section {
@@ -541,6 +559,10 @@ footer {
 
 @media (min-width: 1024px) {
 
+    :root {
+        font-size: 25px;
+    }
+
     .index-project-container {
         padding-top: var(--space-2xl);
     }
@@ -562,12 +584,12 @@ footer {
     }
 
     .about-container img, .me-container img {
-        border: 2px solid var(--accent-color2);
+        
         transition: all 0.4s ease;
     }
 
     .first-abt img:hover, .about-container img:hover {
-        border: 4px solid hsl(19, 55%, 55%);
+        border: 3px solid var(--accent-color2);
         transform: scale(1.05);
     }
 

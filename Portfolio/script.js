@@ -7,8 +7,7 @@ tasktracker = "https://github.com/Lusyoo/Task-Tracker",
 librosys = "https://github.com/Lusyoo/LibroSys",
 email = "https://mail.google.com/mail/?view=cm&to=jlouisse.plete@gmail.com&su=Hello&body=Hi there!",
 linkedin = "https://www.linkedin.com/in/james-louisse-plete/",
-github = "https://github.com/Lusyoo";
-
+github = "https://github.com/Lusyoo",
 indexProjContainer = document.querySelector(".index-project-container"),
 projectContainer = document.querySelector(".project-container"),
 socialsContainer = document.querySelector(".contact-socials-container");
@@ -28,11 +27,17 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 const 
 burger = document.querySelector(".burger"),
+burgerFirstLine = document.querySelector(".burger").firstElementChild,
+burgerSecondLine = burgerFirstLine.nextElementSibling,
+burgerThirdLine = burgerSecondLine.nextElementSibling,
 navBar = document.querySelector(".navigation-bar");
 
 burger.addEventListener('click', () => {
   navBar.classList.toggle("display-none");
   navBar.classList.toggle("flex");
+  burgerFirstLine.style.transform = navBar.classList.contains("display-none") ? "rotate(0deg) translate(0, 0)" : "rotate(45deg) translate(7.5px, 7.5px)";
+  burgerSecondLine.style.opacity = navBar.classList.contains("display-none") ? "1" : "0";
+  burgerThirdLine.style.transform = navBar.classList.contains("display-none") ? "rotate(0deg) translate(0, 0)" : "rotate(-45deg) translate(7.5px, -7.5px)";
 });
 
 const openLink = (link) => window.open(link, "_blank"); 
