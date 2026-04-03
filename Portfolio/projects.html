@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Plete | Web Developer</title>
+    <title>James Plete | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <link rel="icon" href="./assets/icon/favicon.ico">
 </head>
 <body class="flex col">
-    <header class="flex center">
+    <div class="flex center header">
         <div class="logo">
             <a href="./index.html">JL</a>
         </div>
@@ -25,50 +26,112 @@
             <a href="./projects.html" class="nav-links">Projects</a>
             <a href="./contacts.html" class="nav-links">Contacts</a>
         </nav>
-    </header>
-
+    </div>
     <main class="project-main flex col animate">
+        
         <h1 class="sect-head-txt">Projects </h1>
             <p class="base-txt thin-txt animate">
                 Whenever I have some free time, I would work on some projects that to further hone my skills. Here's the compilation of all the projects I've done.
             </p>
             <div class="project-container flex center col gap-xl">
-                <div class="proj-2 bordered flex col gap-l fade-in lucky-9" id="lucky-9">
-                    <img src="./assets/images/lucky9.webp" class="proj-img" id="lucky-9">
-                    <span class="proj-description thin-txt sm-txt">A terminal-based game of Lucky-9</span>
-                    <p class="thin-txt sm-txt"> Tech: Java | Docker</p>
-                </div>
-                <div class="proj-2 bordered flex col gap-l fade-in urlshorty" id="urlshorty">
-                    <img src="./assets/images/urlshorty.webp" class="proj-img" id="urlshorty">
-                    <span class="proj-description thin-txt sm-txt">A url-shortener api</span>
-                    <p class="thin-txt sm-txt"> Tech: Java | Spring Boot | PostgreSQL | Docker</p>
-                </div>
-                <div class="proj-2 bordered flex col gap-l fade-in librosys" id="librosys">
-                    <img src="./assets/images/librosys.webp" class="proj-img" id="librosys">
-                    <span class="proj-description thin-txt sm-txt">A student library management system</span>
-                    <p class="thin-txt sm-txt"> Tech: C# | MySQL | Docker</p>
-                </div>
-                
-                <div class="proj-2 bordered flex col gap-l fade-in caltor" id="caltor">
-                    <img src="./assets/images/caltor.webp" class="proj-img" id="caltor">
-                    <span class="proj-description thin-txt sm-txt">A retro calculator</span>
-                    <p class="thin-txt sm-txt"> Tech: HTML | CSS | JavaScript | Docker</p>
-                </div>
-                <div class="proj-2 bordered flex col gap-l fade-in etchysketchy" id="etchysketchy">
-                    <img src="./assets/images/etchysketchy.webp" class="proj-img" id="etchysketchy">
-                    <span class="proj-description thin-txt sm-txt">A fun pixel sketchpad</span>
-                    <p class="thin-txt sm-txt"> Tech: HTML | CSS | JavaScript | Docker</p>
+                <div class="proj-2 bordered flex col justify-between fade-in lucky-9" id="lucky-9">
+                    <div>
+                        <img src="./assets/images/lucky9.webp" id="lucky-9">
+                        <div class="tech-wrapper flex gap-s base-txt">
+                            <div class="tech-used">Java</div>
+                        </div>
+                        <p class="project-title">Lucky-9</p>
+                        <span class="proj-description thin-txt s-txt">A terminal-based game of Lucky-9</span>
+                    </div>
+                    <div class="view-project-container">
+                        
+                        <a href="https://github.com/Lusyoo/Lucky-9-Project" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
                 </div>
                 
-                <div class="proj-2 bordered flex col gap-l fade-in tasktracker" id="tasktracker">
-                    <img src="./assets/images/tasktracker.webp" class="proj-img" id="tasktracker">
-                    <span class="proj-description thin-txt sm-txt">A lightweight terminal-based task manager</span>
-                    <p class="thin-txt sm-txt"> Tech: Java | JSON | Docker</p>
+                <div class="proj-2 bordered flex col justify-between fade-in urlshorty" id="urlshorty">
+                    <div>
+                        <img src="./assets/images/urlshorty.webp" class="proj-img" id="urlshorty">
+                        <div class="tech-wrapper flex gap-s numerous-tech base-txt urlshorty">
+                            <div class="tech-used">Java</div>
+                            <div class="tech-used">SpringBoot</div>
+                            <div class="tech-used mark-none">PostgreSQL</div>
+                            <div class="tech-used mark-none">Docker</div>
+                            <div class="tech-used mark-none display-none tech-expand">2+ more</div>
+                        </div>
+                        <p class="project-title">Urlshorty</p>
+                        <span class="proj-description thin-txt s-txt">A url shortener api</span>
+                    </div>
+                    <div class="view-project-container">
+                        <a href="https://github.com/Lusyoo/Task-Tracker" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="proj-2 bordered flex col justify-between fade-in librosys" id="librosys">
+                    <div>
+                        <img src="./assets/images/librosys.webp" class="proj-img" id="librosys">
+                        <div class="tech-wrapper flex gap-s base-txt">
+                            <div class="tech-used">C#</div>
+                            <div class="tech-used">Winforms</div>
+                            <div class="tech-used">MySQL</div>
+                        </div>
+                        <p class="project-title">Librosys</p>
+                        <span class="proj-description thin-txt s-txt">A Student Library Management System</span>
+                    </div>
+                    <div class="view-project-container">
+                        <a href="https://github.com/Lusyoo/LibroSys" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="proj-2 bordered flex col justify-between fade-in caltor" id="caltor">
+                    <div>
+                        <img src="./assets/images/caltor.webp" class="proj-img" id="caltor">
+                        <div class="tech-wrapper flex gap-s base-txt">
+                            <div class="tech-used">HTML</div>
+                            <div class="tech-used">CSS</div>
+                            <div class="tech-used">JavaScript</div>
+                        </div>
+                        <p class="project-title">Caltor</p>
+                        <span class="proj-description thin-txt s-txt">A minimalist retro calculator</span>
+                    </div>
+                    <div class="view-project-container">
+                        <a href="https://github.com/Lusyoo/Urlshorty" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="proj-2 bordered flex col justify-between fade-in etchysketchy" id="etchysketchy">
+                    <div>
+                        <img src="./assets/images/etchysketchy.webp" class="proj-img" id="etchysketchy">
+                        <div class="tech-wrapper flex gap-s base-txt">
+                            <div class="tech-used">HTML</div>
+                            <div class="tech-used">CSS</div>
+                            <div class="tech-used">JavaScript</div>
+                        </div>
+                        <p class="project-title">Etchysketchy</p>
+                        <span class="proj-description thin-txt s-txt">A fun pixel sketchpad</span>
+                    </div>
+                    <div class="view-project-container">
+                        <a href="https://github.com/Lusyoo/Urlshorty" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="proj-2 bordered flex col justify-between fade-in tasktracker" id="tasktracker">
+                    <div>
+                        <img src="./assets/images/tasktracker.webp" class="proj-img" id="tasktracker">
+                        <div class="tech-wrapper flex gap-s base-txt">
+                            <div class="tech-used">Java</div>
+                            <div class="tech-used">JSON</div>
+                        </div>
+                        <p class="project-title">TaskTracker</p>
+                        <span class="proj-description thin-txt s-txt">A lightweight cli task manager</span>
+                    </div>
+                   <div class="view-project-container">
+                        <a href="https://github.com/Lusyoo/Task-Tracker" class="view-project base-txt" target="_blank">View Project</a>
+                    </div>
                 </div>
             </div>
     </main>
 
-   <footer class="flex justify-center align-center col gap-l">
+   <footer class="flex justify-center align-center col gap-l fade-in">
         <div class="flex col gap-l txt-center">
             <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
             <p class="copyright-txt"> All rights reserved.</p>

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Plete | Web Developer</title>
+    <title>James Plete | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <link rel="icon" href="./assets/icon/favicon.ico">
 </head>
 <body class="flex col">
-    <header class="flex center">
+    <div class="flex center header">
         <div class="logo">
             <a href="./index.html">JL</a>
         </div>
@@ -25,8 +26,7 @@
             <a href="./projects.html" class="nav-links">Projects</a>
             <a href="./contacts.html" class="nav-links">Contacts</a>
         </nav>
-    </header>
-
+    </div>
     <main class="contact-main flex col fade-in">
        <div class="flex col gap-l">
            <h1 class="sect-head-txt"> Get In Touch </h1>
@@ -36,37 +36,37 @@
        </div>
 
         <div class="contact-socials-container flex col gap-xl">
-            <div class="flex gap-l base-txt contact-socials align-center email-contact" id="email">
+            <a href="https://mail.google.com/mail/?view=cm&to=jlouisse.plete@gmail.com&su=Hello&body=Hi there!" class="flex gap-l base-txt contact-socials align-center email-contact" id="email" target="_blank">
                 <img src="./assets/icon/email.png" alt="">
                 <p class="thin-txt">EMAIL</p>
                 <p class="socials-text">
                     jlouisse.plete@gmail.com
                 </p>
-            </div>
+            </a>
 
-            <div class="flex gap-l base-txt contact-socials align-center github-contact" id="github">
+            <a href="https://github.com/Lusyoo" class="flex gap-l base-txt contact-socials align-center github-contact" id="github" target="_blank">
                 <img src="./assets/icon/github.png" alt="">
                 <p class="thin-txt">Github</p>
                 <p class="socials-text">
                     Lusyoo
                 </p>
-            </div>
+            </a>
 
-            <div class="flex gap-l base-txt contact-socials align-center linkedin-contact" id="linkedin">
+            <a href="https://www.linkedin.com/in/james-louisse-plete/" class="flex gap-l base-txt contact-socials align-center linkedin-contact" id="linkedin" target="_blank">
                 <img src="./assets/icon/linkedin.png" alt="">
                 <p class="thin-txt">Linkedin</p>
                 <p class="socials-text">
                     in/james-louisse-plete
                 </p>
-            </div>
+            </a>
 
-            <div>
+            <div class="buymeacoffee">
                 <a href='https://ko-fi.com/W7W81WKS0Z' target='_blank'><img class="buymeacoffee" src="./assets/icon/kofi2.webp" alt='Buy Me a Coffee at ko-fi.com' /></a>
             </div>
         </div>
     </main>
 
-   <footer class="flex justify-center align-center col gap-l">
+   <footer class="flex justify-center align-center col gap-l fade-in">
         <div class="flex col gap-l txt-center">
             <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
             <p class="copyright-txt"> All rights reserved.</p>
