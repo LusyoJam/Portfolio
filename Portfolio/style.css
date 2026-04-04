@@ -203,7 +203,7 @@ body {
 }
 
 .burger div {
-    width: 80%;
+    width: 75%;
     height: 4px;
     background-color: var(--accent-color2);
     margin: 6px 0;
@@ -273,7 +273,7 @@ section {
 .sect-head-txt {
     color: var(--color-titles);
     font-size: var(--font-l);
-    margin-top: var(--font-xl);
+    margin-top: var(--space-m);
 }
 
 /* INDEX */
@@ -313,9 +313,9 @@ section {
     border-radius: var(--border-radius-m);
 }
 
-.index-project-container::-webkit-scrollb   ar {
+.index-project-container::-webkit-scrollbar {
     display: none;
-    }
+}
 
 .proj-wrapper {
     transition: all 0.3s ease;
@@ -323,7 +323,7 @@ section {
 }
 
 .project-container {
-    width: 400px;
+    width: 100%;
     padding: var(--space-m);
     gap: var(--space-2xl);
 }
