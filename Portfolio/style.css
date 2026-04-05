@@ -580,6 +580,9 @@ li {
 .about-container {
     padding: var(--space-l) var(--space-s);
     gap: var(--space-s);
+    margin-bottom: var(--space-m);
+    flex-direction: column-reverse;
+    text-align: left;
 }
 
 .first-abt {
@@ -596,13 +599,16 @@ li {
 
 .about-container img {
     object-fit: cover;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 170px;
     border-radius: var(--border-radius-s);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-m);
 }
 
 .reverse {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 }
 
 .java-comp {
@@ -822,6 +828,10 @@ footer {
 
 
     /* ABOUT */
+
+    .about-container {
+        flex-direction: row;
+    }
     .about-container img {
         width: 230px;
         height: 230px;
