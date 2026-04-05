@@ -1,97 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Plete | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
-    <link rel="icon" href="./assets/icon/favicon.ico">
-</head>
-<body class="flex col">
-    <div class="flex center header">
-        <div class="logo">
-            <a href="./index.html">JL</a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>James Plete | Software Engineer</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+        <link rel="icon" href="./assets/icon/favicon.ico">
+    </head>
+    <body class="flex col">
+        <div class="flex center header">
+            <div class="logo">
+                <a href="./index.html">JL</a>
+            </div>
+            
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav class="navigation-bar display-none col txt-right">
+                <a href="./index.html" class="nav-links">Home</a>
+                <a href="./about.html" class="nav-links">About</a>
+                <a href="./projects.html" class="nav-links">Projects</a>
+                <a href="./contacts.html" class="nav-links">Contacts</a>
+            </nav>
         </div>
-        
-        <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <main class="about-main">
+            <section class="flex col justify-between animate about-sect">
+                <div class="flex align-center justify-center col first-abt">
+                    <div class="flex align-center justify-center me-container"><img src="./assets/images/me.webp" alt=""></div>
+                    <div class="base-txt about-intro">Kumusta! 👋  <br> <br> I am James Plete, a Web Developer based in Valenzuela City, Philippines. I'm currently a sophomore pursuing Bachelor of Science in Information Technology in Pamantasan ng Lungsod ng Valenzuela.</div>         
+                </div>
 
-        <nav class="navigation-bar display-none col txt-right">
-            <a href="./index.html" class="nav-links">Home</a>
-            <a href="./about.html" class="nav-links">About</a>
-            <a href="./projects.html" class="nav-links">Projects</a>
-            <a href="./contacts.html" class="nav-links">Contacts</a>
-        </nav>
-    </div>
-    <main class="about-main">
-        <h1 class="sect-head-txt animate"> About</h1>        
-        <section class="flex col justify-between animate about-sect">
-            <div class="flex align-center justify-center col first-abt">
-                <div class="flex align-center justify-center me-container"><img src="./assets/images/me.webp" alt=""></div>
-                <p class="base-txt">Kumusta! 👋  <br> <br> I am James Plete, an aspriring ML Engineer. I'm currently a sophomore pursuing Bachelor of Science in Information Technology in Pamantasan ng Lungsod ng Valenzuela.</p>         
+                <div class="about-container-wrapper flex col">
+                    
+                    <div class="about-container flex slide-in align-center justify-center reverse">
+                        <p class="base-txt">Whenever I have free time, I would dedicate myself to learn new things, not just in tech, but also in other aspects of my life. I believe that improving oneself starts with learning new things and gaining new perspectives about the world. That's why I believe that as long we're alive, we can always improve ourselves through perseverance and effort.</p>
+                    
+                        <div class="about-img-container flex align-center justify-center"><img class="programming-img" src="./assets/images/programming.webp" alt=""></div>
+                    
+                    </div>
+                    <div class="about-container slide-in flex align-center justify-center">
+                        <p class="base-txt">While learning and builidng things produces good results overtime, we should also not turn a blind eye to stress and burnouts. For me, going into nature trips and spending time with my family and friends helps reduce these. The greeneries and the air soothes my mind and helps me generate new ideas and solutions.</p>
+                        <div class="about-img-container flex align-center justify-center nature-img"><img src="./assets/images/2.webp" alt=""></div>
+                    
+                    </div>
+                    <div class="about-container slide-in flex align-center reverse">
+                        <p class="base-txt">Like any other people navigating through their life though, it's natural that we encounter problems and hardships here and there. There would be some time in our lives that there is seemingly no hope anymore, but it is very important not to give up and trust yourself that all things will be alright. </p>
+                        <div class="about-img-container flex align-center justify-center"><img src="./assets/images/3.webp" alt=""></div>
+                    
+                    </div>
+                    <div class="about-container slide-in flex align-center">
+                        <p class="base-txt">Finally, I believe that we should always seek challenges and leave our comfort zones to explore more about life. Doing so would not only let us  grow as an individual but would also teach us the things we want and value in our lives. Just a reminder not to treat ourselves harshly during the process. Padayon!</p>
+                        <div class="about-img-container flex align-center justify-center"><img class="java-comp" src="./assets/images/java_comp.webp" alt=""></div>
+                    
+                    </div>
+                </div>
+            </section>
+
+            <section class="education-container fade-in">
+                    <h3>
+                        Education
+                    </h3>
+                    <p>
+                        <ul class="base-txt education-list ul">
+                            <li>Maysan Elementary School (2011 - 2018)</li>
+                            <li>Maysan National Highscool (2018 - 2022)</li>
+                            <li>Electron Technical College of Education (2022-2024)</li>
+                            <li>Pamantasan ng Lungsod ng Valenzuela (2024 - current)</li>
+                        </ul>
+                    </p>
+            </section>
+            <section class="achievements-container fade-in">
+                    <h3 class="about-sect-head sect">
+                        Achievements and Certifications
+                    </h3>
+                    <p>
+                        <ul class="base-txt achievements-list ul">
+                            <li>PLV ITLympics Java Competition - 2nd place</li>
+                        </ul>
+                    </p>
+            </section>
+        </main>
+
+        <footer class="flex justify-center align-center col gap-l fade-in">
+            <div class="flex col gap-l txt-center">
+                <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete.</p>
+                <p class="copyright-txt"> All rights reserved.</p>
             </div>
+        </footer>
 
-            <div class="about-container flex align-center justify-center reverse">
-                <p class="base-txt">During free time, I enjoy learning new things and building something out of those. I also like solving problems and approaching them systematically.</p>
-                
-                <div class="about-self flex align-center justify-center"><img class="programming-img" src="./assets/images/programming.webp" alt=""></div>
-                
-            </div>
-
-            <div class="about-container flex align-center justify-center">
-                <p class="base-txt">Outside of work and school, I often found solace in nature trips and adventures with my friends.</p>
-                <div class="about-self flex align-center justify-center nature-img"><img src="./assets/images/2.webp" alt=""></div>
-                
-            </div>
-
-            <div class="about-container flex align-center reverse">
-                <p class="base-txt">Like any other students navigating through their life though, I also encounter problems and hardships.</p>
-                <div class="about-self flex align-center justify-center"><img src="./assets/images/3.webp" alt=""></div>
-                
-            </div>
-
-            <div class="about-container flex align-center">
-                <p class="base-txt">Nevertheless, I view those problems as challenges that fuels me to keep moving and achieve my dreams one step at a time.</p>
-                <div class="about-self flex align-center justify-center"><img class="java-comp" src="./assets/images/java_comp.webp" alt=""></div>
-                
-            </div>
-        </section>
-
-        <section class="education-container fade-in">
-                <h3>
-                    Education
-                </h3>
-                <p>
-                    <ul class="base-txt education-list ul">
-                        <li>Maysan Elementary School (2011 - 2018)</li>
-                        <li>Maysan National Highscool (2018 - 2022)</li>
-                        <li>Electron Technical College of Education (2022-2024)</li>
-                        <li>Pamantasan ng Lungsod ng Valenzuela (2024 - current)</li>
-                    </ul>
-                </p>
-        </section>
-        <section class="achievements-container fade-in">
-                <h3>
-                    Achievements and Certifications
-                </h3>
-                <p>
-                    <ul class="base-txt achievements-list ul">
-                        <li>PLV ITLympics Java Competition - 2nd place</li>
-                    </ul>
-                </p>
-        </section>
-    </main>
-
-    <footer class="flex justify-center align-center col gap-l fade-in">
-        <div class="flex col gap-l txt-center">
-            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
-            <p class="copyright-txt"> All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+    </body>
+    </html>

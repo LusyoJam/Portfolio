@@ -33,19 +33,19 @@
         
         <section class="flex col first-sect animate">
             <h1 class="intro-txt">Aiming for Greatness.</h1>
-            <p class="base-txt">I'm James — a Software Engineer committed on building robust and meaningful systems.</p>
+            <div class="intro-paragraph base-txt">I'm James — a Web Developer based in Valenzuela City, Philippines, I'm committed on building robust and meaningful systems, ensuring that it meets the highest standards of quality and performance.</div>
 
-            <a class="call-to-action bordered base-txt flex gap-s" href="./about.html">Learn More<div class="arrow">&rightarrow;</div></a>
+            <a class="call-to-action arrowed bordered base-txt flex gap-s" href="./about.html">Learn More<div class="arrow">&rightarrow;</div></a>
         </section>
 
         <section class="project-sect flex col animate">
             <h1 class="sect-head-txt">Projects </h1>
-            <span class="base-txt thin-txt">A peek to some projects I did</span>
+            <div class="sect-description base-txt thin-txt">Whenever there is an opportunity to apply the knowledge I've learned, I would always make even a simple project to solidify my understanding. Here are some of the projects I did: </div>
 
             <div class="index-project-container">
 
                 <div class="proj-wrapper flex base-txt">
-                    <div class="project flex col justify-around bordered lucky-9" id="lucky-9">
+                    <div class="project flex col justify-between bordered lucky-9" id="lucky-9">
                         <div>
                             <img src="./assets/images/lucky9.webp" id="lucky-9">
                             <div class="tech-wrapper flex gap-s">
@@ -58,7 +58,7 @@
                             <a href="https://github.com/Lusyoo/Lucky-9-Project" class="view-project base-txt" target="_blank">View Project</a>
                         </div>
                     </div>
-                    <div class="project bordered flex col justify-around  etchysketchy" id="etchysketchy">
+                    <div class="project bordered flex col justify-between  etchysketchy" id="etchysketchy">
                         <div>
                             <img src="./assets/images/etchysketchy.webp" id="etchysketchy">
                             <div class="tech-wrapper flex gap-s">
@@ -73,9 +73,9 @@
                             <a href="https://github.com/Lusyoo/Etchysketchy" class="view-project base-txt" target="_blank">View Project</a>
                         </div>
                     </div>
-                    <div class="project bordered librosys" id="librosys">
-                        <img src="./assets/images/librosys.webp" id="librosys">
-                        <div class="view-project-container">
+                    <div class="project col flex bordered librosys justify-between" id="librosys">
+                        <div>
+                            <img src="./assets/images/librosys.webp" id="librosys">
                             <div class="tech-wrapper flex gap-s">
                                 <div class="tech-used">C#</div>
                                 <div class="tech-used">Winforms</div>
@@ -83,18 +83,22 @@
                             </div>
                             <p class="project-title">Librosys</p>
                             <span class="proj-description thin-txt s-txt">A Student Library Management System</span>
+                        </div>
+                        <div class="view-project-container">
                             <a href="https://github.com/Lusyoo/LibroSys" class="view-project base-txt" target="_blank">View Project</a>
                         </div>
                     </div>
-                    <div class="project bordered tasktracker" id="tasktracker">
-                        <img src="./assets/images/tasktracker.webp" id="tasktracker">
-                        <div class="view-project-container">
+                    <div class="project flex col bordered tasktracker justify-between" id="tasktracker">
+                        <div>
+                            <img src="./assets/images/tasktracker.webp" id="tasktracker">
                             <div class="tech-wrapper flex gap-s">
                                 <div class="tech-used">Java</div>
                                 <div class="tech-used">JSON</div>
                             </div>
                             <p class="project-title">TaskTracker</p>
                             <span class="proj-description thin-txt s-txt">A lightweight cli task manager</span>
+                        </div>
+                        <div class="view-project-container">
                             <a href="https://github.com/Lusyoo/Task-Tracker" class="view-project base-txt" target="_blank">View Project</a>
                         </div>
                     </div>   
@@ -105,12 +109,12 @@
             <div class="proj-circles-wrapper flex gap-s">
                 <div class="proj-circles active-circle"></div>
                 <div class="proj-circles"></div>
-                <div class="proj-circles"></div>
-                <div class="proj-circles"></div>
+                <div class="proj-circles mark-none"></div>
+                <div class="proj-circles mark-none"></div>
             </div>
 
             <div class="base-txt flex align-center justify-between proj-footer">
-                <a href="./projects.html" class="all-projects-btn">View All Projects</a>
+                <a href="./projects.html" class="all-projects-btn flex gap-s arrowed">All Projects <div class="arrow">&rightarrow;</div></a>
                 <div class="proj-navigation flex gap-l">
                     <div class="prev-proj proj-btn flex align-center justify-center">&leftarrow;</div>
                     <div class="next-proj proj-btn flex align-center justify-center">&rightarrow;</div>
@@ -120,14 +124,14 @@
 
         <section class="flex col fade-in">
             <h1 class="sect-head-txt">Contacts </h1>
-            <span class="base-txt">Want to reach out and say hi?</span>
-            <a class="a base-txt" href="./contacts.html">Contact me &RightArrow;</a>
+            <div class="base-txt sect-description">I believe that collaboration and teamwork is one of the main ingredients to success. Feel free to contact me whether you have a cool project idea in mind or just want to say hi!</div>
+            <a class="a base-txt flex gap-s arrowed contact-btn" href="./contacts.html">Contact me <div class="arrow">&RightArrow;</div></a>
         </section>
 
     </main>
     <footer class="flex justify-center align-center col gap-l fade-in">
         <div class="flex col gap-l txt-center">
-            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete</p>
+            <p class="copyright-txt">&copy;<span class="copy-date">2024-2026</span> James Plete.</p>
             <p class="copyright-txt"> All rights reserved.</p>
         </div>
     </footer>

@@ -12,7 +12,8 @@ navBar = document.querySelector(".navigation-bar"),
 viewProject = document.querySelector(".view-project"),
 prevProj = document.querySelector(".prev-proj"),
 nextProj = document.querySelector(".next-proj"),
-techExpand = document.querySelectorAll(".tech-expand");
+techExpand = document.querySelectorAll(".tech-expand"),
+elementsToRemove = [...document.querySelectorAll(".mark-none")];
 
 
 let projNumber = 0;
@@ -39,6 +40,7 @@ burger.addEventListener('click', () => {
 });
 
 const openLink = (link) => window.open(link, "_blank"); 
+const changeDisplay = (elements) => elements.forEach(el => el.classList.toggle("display-none"));
 
 
 // CONTACT
@@ -61,24 +63,28 @@ if (document.querySelector(".contact-socials-container")) {
   }});
 }
 
+const 
+slides = document.querySelectorAll('.project'),
+slidesContainer = document.querySelector('.proj-wrapper'),
+projectCircles = [...document.querySelectorAll(".proj-circles")];
+
+let inPC = window.innerWidth > 1000,
+slidesLength = inPC ? slides.length / 2 : slides.length,
+transformAmount = inPC ? 101 : 100;
+
 
 // PROJECT
 
 if (document.querySelector(".index-project-container")) {
+  
   let current = 0;
-
-  const 
-  slides = document.querySelectorAll('.project'),
-  slidesContainer = document.querySelector('.proj-wrapper'),
-  projectCircles = [...document.querySelectorAll(".proj-circles")];
 
   const updateDots = (current) => projectCircles[current].classList.toggle("active-circle");
 
   const goTo = (index) => {  
-    
     if (index === current + 1 || index === current - 1) updateDots(current);
-    current = (index + slides.length) % slides.length; 
-    slidesContainer.style.transform = `translateX(-${current * 100}%)`;
+    current = (index + slidesLength) % slidesLength; 
+    slidesContainer.style.transform = `translateX(-${current * transformAmount}%)`;
     updateDots(current);
   }
 
@@ -93,34 +99,27 @@ if (document.querySelector(".index-project-container")) {
   });
 
   const autoPlay = setInterval(() => goTo(current + 1), 2500);
-};
 
-const removeElement = [...document.querySelectorAll(".mark-none")];
+  [viewProject, nextProj, prevProj].forEach(() => addEventListener('click', () => clearInterval(autoPlay)));
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 768 && window.innerWidth < 1024) {
-    removeElement.forEach(el => el.classList.toggle("display-none"));
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth > 1000) {
+      changeDisplay(elementsToRemove);
+  }
+});
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 760) {
+    elementsToRemove.forEach(el => el.classList.remove("display-none"));
+    inPC = false;
+  } else {
+    inPC = true;  
+    elementsToRemove.forEach(el => el.classList.add("display-none"));
   }
 });
 
 
-// techExpand.forEach(el => {
-//   el.addEventListener('click', (e) => {
-//     const parent = e.target.parentElement.classList;
-
-//     if (parent.contains("urlshorty")) {
-//       parent.children.filter
-//     }
-//   })
-// });
-
-
-
-
-
-
-
-
-
+ 
 
 
