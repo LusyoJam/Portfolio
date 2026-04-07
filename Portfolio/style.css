@@ -366,15 +366,18 @@ li {
 
 .demo-reel-container {
     width: var(--width-100);
-    height: 200px;  
-    margin: var(--space-max) 0;
+    height: fit-content;
+    margin: var(--space-3xl) 0;
     border-radius: var(--border-radius-m);
 }
 
 .demo-reel-container video {
+    display: block;
     width: 100%;
-    height: inherit;
+    height: 100%;
     border-radius: var(--border-radius-m);
+    border: 2px solid #3d3c3c;
+    margin: var(--space-l) 0;
 }
 
 /* --- Skills Carousel --- */
@@ -404,7 +407,7 @@ li {
     top: 0;
     bottom: 0;
     z-index: 2;
-    
+
 }
 
 .skill-container::before {
@@ -729,7 +732,7 @@ footer {
     from {
         opacity: 0;
         transform: translate(-50%);
-    }   
+    }
 
     to {
         opacity: 1;
@@ -787,12 +790,11 @@ footer {
 
     .index-project-container {
         width: 75%;
-        height: 50vh;
+        height: fit-content;
     }
 
     .demo-reel-container {
         width: 95%;
-        height: 450px;
         align-self: center;
     }
 
@@ -801,7 +803,7 @@ footer {
     }
 
     .project {
-        height: 100%;
+        height: fit-content;
         padding: var(--space-m);
     }
 
@@ -809,7 +811,7 @@ footer {
     .proj-2 img {
         object-position: left;
         width: 100%;
-        margin-bottom: var(--space  -s);
+        margin-bottom: var(--space-s);
     }
 
 
@@ -854,6 +856,7 @@ footer {
     .about-container {
         flex-direction: row;
     }
+
     .about-container img {
         width: 230px;
         height: 230px;
@@ -863,7 +866,7 @@ footer {
     .reverse {
         flex-direction: row-reverse;
     }
-    
+
     .contact-main {
         height: fit-content;
     }
@@ -968,8 +971,14 @@ footer {
     }
 
     .demo-reel-container {
-        width: 80%;
-        height: 60vh;
+        width: 100%;
+        margin-bottom: var(--space-max);
+        overflow: hidden;
+    }
+
+    .demo-reel-container video {
+        width: 100%;
+        height: 100%;
     }
 
     .proj-wrapper {
@@ -998,7 +1007,7 @@ footer {
 
     .proj-2 {
         cursor: pointer;
-        flex: 0 1 30    %;
+        flex: 0 1 30%;
         transition: all 0.3s ease;
         margin: 0 var(--space-xs);
     }
@@ -1048,12 +1057,13 @@ footer {
     }
 
     .me-container {
-        width: 35%;
+        width: 40%;
         padding: 0;
     }
 
     .me-container img {
         width: 100%;
+        border-radius: 50% !important;
         justify-content: baseline;
         margin: 0;
     }
@@ -1084,15 +1094,15 @@ footer {
     .about-container img {
         width: 500px;
         height: 500px;
+        border-radius: 50%;
     }
 
     .about-container img,
     .me-container img {
-        border-radius: var(--border-radius-m);
         transition: all 0.4s ease;
     }
 
-    .about-container img:hover {
+    .about-container img:hover, .me-container img:hover {
         transform: scale(1.05);
     }
 
